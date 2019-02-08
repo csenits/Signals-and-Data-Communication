@@ -1,0 +1,11 @@
+clc;
+clear;
+n=0:64;
+a=1;
+f=1;
+fs=8;
+y=a*sin(2*pi*(f/fs)*n+0);
+plot(y);plot(n,y);
+xlabel('n');
+ylabel('sinx');
+title('sinusoidal wave');

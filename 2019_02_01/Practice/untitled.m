@@ -1,0 +1,28 @@
+clc;
+clear;
+t = -5:0.01:5;
+w = 1;
+
+subplot(3,1,1);
+y=exp(-2*t).*cos(2*pi*w*t+pi/3);
+plot(t,y);
+xlabel('t');
+ylabel('y');
+title('Original Signal');
+
+subplot(3,1,2);
+t=-3:0.01:7;
+y=exp(-2*(t-2)).*cos(2*pi*w*(t-2)+pi/3);
+plot(t,y);
+xlabel('t');
+ylabel('y');
+title('Delay by 2 Seconds');
+
+
+subplot(3,1,3);
+t=-1.5:0.1:3.5;
+y=exp(-2*(2*t-2)).*cos(2*pi*w*(2*t-2)+pi/3);
+plot(t,y);
+xlabel('t');
+ylabel('y');
+title('Compress and Delay by 2 Seconds');
