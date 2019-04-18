@@ -1,0 +1,16 @@
+clc;
+clear all;
+x=0:64;
+f=1;fs=8;a=1;
+subplot(2,1,1);
+y=a*sin(2*pi*(f/fs)*x);
+plot(x,y);
+xlabel('x');
+ylabel('y');
+title('sinosodial wave 1');
+subplot(2,1,2);
+y=a*sin(2*pi*(f/fs)*x + pi/2);
+plot(x,y);
+xlabel('x');
+ylabel('y');
+title('sinosodial wave 2');

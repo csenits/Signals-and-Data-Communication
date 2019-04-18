@@ -1,0 +1,9 @@
+clc;
+clear;
+t=-10:0.01:10;
+x=2*exp(t)
+subplot(5,1,1);
+plot(t,x)
+xlabel('t');
+ylabel('x(t)');
+title('2e^(t)');

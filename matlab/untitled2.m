@@ -1,0 +1,15 @@
+clc;
+clear all;
+t=0:0.01:4;
+subplot(2,1,1);
+x=exp(-t);
+plot(t,x);
+xlabel('t');
+ylabel('x');
+title('1st');
+subplot(2,1,2);
+x=5*exp(-0.2*t);
+plot(t,x);
+xlabel('t');
+ylabel('x');
+title('2nd');
